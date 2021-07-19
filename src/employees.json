@@ -1,0 +1,39 @@
+{
+  "employees": [
+    {
+      "id": 1,
+      "username": "John",
+      "status": "added"
+    },
+    {
+      "id": 2,
+      "username": "Anna",
+      "status": "inactive"
+    },
+    {
+      "id": 3,
+      "username": "Vadim",
+      "status": "added"
+    },
+    {
+      "id": 4,
+      "username": "Slava",
+      "status": "active"
+    },
+    {
+      "id": 5,
+      "username": "Kirill",
+      "status": "approved"
+    },
+    {
+      "username": "Vadim",
+      "status": "added",
+      "id": 6
+    },
+    {
+      "status": "inactive",
+      "username": "Stas",
+      "id": 7
+    }
+  ]
+}
