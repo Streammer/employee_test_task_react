@@ -4,19 +4,24 @@ import Employee from "../Employee/Employee"
 import {getRequest, patchRequest} from '../../api/requests'
 import {BASE} from "../../urlsList"
 import {userTypes} from "../../interfaces/userTypes"
+import {getEmployees} from "../../api/getEmployees"
 import './style.scss'
 
 
 const UserList: React.FC = () => {
     const [employee, setEmployee] = useState<userTypes[]>([])
-    const getEmployees = () => {
-        getRequest(`${BASE}employees`)
+    // const getEmployees = () => {
+    //     getRequest(`${BASE}employees`)
+    //         .then((response) => {
+    //             setEmployee(response.data)
+    //         })
+    // }
+
+    useEffect(() => {
+        getEmployees()
             .then((response) => {
                 setEmployee(response.data)
             })
-    }
-    useEffect(() => {
-        getEmployees()
     }, [])
 
     const changeEmployeeStatus = (id: number, status: string) => {
