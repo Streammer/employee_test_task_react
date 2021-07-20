@@ -1,10 +1,10 @@
 import React, {useState} from 'react';
-import './style.scss';
-import EmployeeTypes from "../../interfaces/employeeTypes";
 import StatusItem from "../SattusItem/StatusItem";
+import EmployeeTypes from "../../interfaces/employeeTypes";
+import './style.scss';
 
 const Employee: React.FC<EmployeeTypes> = ({id, name, status, changeEmployeeStatus}) => {
-    const statusArray:Array<string> = [
+    const statusArray: Array<string> = [
         'added',
         'in-check',
         'approved',
@@ -18,22 +18,20 @@ const Employee: React.FC<EmployeeTypes> = ({id, name, status, changeEmployeeStat
     }
 
     return (
-        <>
-            <div className='employee'>
-                <div>Employee Name:</div>
-                <div className='employee__name'>{name}</div>
-                <div className='employee__status'>
-                    {employeeStatus.map(item => (
-                            <StatusItem
-                                getStatusValue={getStatusValue}
-                                key={item}
-                                item={item}
-                                status={status}/>
-                        )
-                    )}
-                </div>
+        <div className='employee'>
+            <div>Employee Name:</div>
+            <div className='employee__name'>{name}</div>
+            <div className='employee__status'>
+                {employeeStatus.map(item => (
+                        <StatusItem
+                            getStatusValue={getStatusValue}
+                            key={item}
+                            item={item}
+                            status={status}/>
+                    )
+                )}
             </div>
-        </>
+        </div>
     )
 }
 
