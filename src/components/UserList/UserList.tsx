@@ -1,15 +1,16 @@
-import React from 'react';
-import './style.scss'
-import Employee from "../Employee/Employee";
-import {useState, useEffect} from 'react';
+import React from 'react'
+import {useState, useEffect} from 'react'
+import Employee from "../Employee/Employee"
 import {getRequest, patchRequest} from '../../api/requests'
-import {getRequestTypes} from "../../interfaces/getRequestTypes";
+import {BASE} from "../../urlsList"
+import {userTypes} from "../../interfaces/userTypes"
+import './style.scss'
 
-const ListOfEmployees: React.FC = () => {
-    const [employee, setEmployee] = useState<getRequestTypes[]>([])
 
+const UserList: React.FC = () => {
+    const [employee, setEmployee] = useState<userTypes[]>([])
     const getEmployees = () => {
-        getRequest('http://localhost:3001/employees')
+        getRequest(`${BASE}employees`)
             .then((response) => {
                 setEmployee(response.data)
             })
@@ -19,18 +20,18 @@ const ListOfEmployees: React.FC = () => {
     }, [])
 
     const changeEmployeeStatus = (id: number, status: string) => {
-        patchRequest(`http://localhost:3001/employees/${id}`, {id, status})
+        patchRequest(`${BASE}employees/${id}`, {id, status})
             .then(() => {
                 const nextEmployee = employee.map(it => {
                     if (it.id === id) {
                         return {
                             ...it,
                             status
-                        };
+                        }
                     }
-                    return it;
-                });
-                setEmployee(nextEmployee);
+                    return it
+                })
+                setEmployee(nextEmployee)
             })
     }
 
@@ -42,12 +43,13 @@ const ListOfEmployees: React.FC = () => {
                               status={item.status}
                               id={item.id}
                               changeEmployeeStatus={changeEmployeeStatus}
-                              name={item.username}/>
+                              name={item.username}
+                    />
                 ))
                 }
             </div>
         </>
-    );
-};
+    )
+}
 
-export default ListOfEmployees;
+export default UserList

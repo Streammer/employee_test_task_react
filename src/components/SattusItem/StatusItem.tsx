@@ -13,7 +13,7 @@ const StatusItem:React.FC<statusTypes> = ({status, item, getStatusValue}) => {
                 </span>
             </div>
         </>
-    );
-};
+    )
+}
 
-export default StatusItem;
+export default StatusItem

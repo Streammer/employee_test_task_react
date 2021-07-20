@@ -1,9 +1,9 @@
-import React, {useState} from 'react';
-import StatusItem from "../SattusItem/StatusItem";
-import EmployeeTypes from "../../interfaces/employeeTypes";
-import './style.scss';
+import React, {useState} from 'react'
+import StatusItem from "../SattusItem/StatusItem"
+import EmployeeTypes from "../../interfaces/employeeTypes"
+import './style.scss'
 
-const Employee: React.FC<EmployeeTypes> = ({id, name, status, changeEmployeeStatus}) => {
+const Employee: React.FC<EmployeeTypes> = (props:EmployeeTypes) => {
     const statusArray: Array<string> = [
         'added',
         'in-check',
@@ -14,20 +14,20 @@ const Employee: React.FC<EmployeeTypes> = ({id, name, status, changeEmployeeStat
 
     const [employeeStatus, setEmployeeStatus] = useState(statusArray)
     const getStatusValue = (statusValue: string) => {
-        changeEmployeeStatus(id, statusValue);
+        props.changeEmployeeStatus(props.id, statusValue)
     }
 
     return (
         <div className='employee'>
             <div>Employee Name:</div>
-            <div className='employee__name'>{name}</div>
+            <div className='employee__name'>{props.name}</div>
             <div className='employee__status'>
                 {employeeStatus.map(item => (
                         <StatusItem
                             getStatusValue={getStatusValue}
                             key={item}
                             item={item}
-                            status={status}/>
+                            status={props.status}/>
                     )
                 )}
             </div>

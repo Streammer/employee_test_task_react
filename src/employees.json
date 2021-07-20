@@ -3,12 +3,12 @@
     {
       "id": 1,
       "username": "John",
-      "status": "inactive"
+      "status": "added"
     },
     {
       "id": 2,
       "username": "Anna",
-      "status": "active"
+      "status": "in-check"
     },
     {
       "id": 3,
@@ -18,16 +18,16 @@
     {
       "id": 4,
       "username": "Slava",
-      "status": "in-check"
+      "status": "active"
     },
     {
       "id": 5,
       "username": "Kirill",
-      "status": "added"
+      "status": "inactive"
     },
     {
       "username": "Vadim",
-      "status": "in-check",
+      "status": "active",
       "id": 6
     },
     {
