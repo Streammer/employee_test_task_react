@@ -1,11 +1,10 @@
 import React from 'react'
 import {useState, useEffect} from 'react'
 import Employee from "../Employee/Employee"
-import {getRequest, patchRequest} from '../../api/requests'
-import {BASE} from "../../urlsList"
 import {userTypes} from "../../interfaces/userTypes"
 import {getEmployees} from "../../api/getEmployees"
 import './style.scss'
+import {patchEmployees} from "../../api/patchEmployees";
 
 
 const UserList: React.FC = () => {
@@ -18,13 +17,25 @@ const UserList: React.FC = () => {
     // }
 
     useEffect(() => {
-
         getEmployees()
             .then(response => setEmployee(response))
     }, [])
 
     const changeEmployeeStatus = (id: number, status: string) => {
-        patchRequest(`${BASE}employees/${id}`, {id, status})
+        // patchRequest(`${BASE}employees/${id}`, {id, status})
+        //     .then(() => {
+        //         const nextEmployee = employee.map(it => {
+        //             if (it.id === id) {
+        //                 return {
+        //                     ...it,
+        //                     status
+        //                 }
+        //             }
+        //             return it
+        //         })
+        //         setEmployee(nextEmployee)
+        //     })
+        patchEmployees(id, status)
             .then(() => {
                 const nextEmployee = employee.map(it => {
                     if (it.id === id) {
