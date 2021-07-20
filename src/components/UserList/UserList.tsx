@@ -3,8 +3,8 @@ import {useState, useEffect} from 'react'
 import Employee from "../Employee/Employee"
 import {userTypes} from "../../interfaces/userTypes"
 import {getEmployees} from "../../api/getEmployees"
+import {patchEmployees} from "../../api/patchEmployees"
 import './style.scss'
-import {patchEmployees} from "../../api/patchEmployees";
 
 
 const UserList: React.FC = () => {
