@@ -3,6 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="1887e751-936f-46dc-91fd-9e07cf3cf5ab" name="Default Changelist" comment="size of ui elements and position was been corrected">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ListOfEmployees/ListOfEmployees.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ListOfEmployees/style.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/employees.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/employees.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,7 +74,14 @@
       <option name="project" value="LOCAL" />
       <updated>1626762995887</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="css and position of import was been refactoring">
+      <created>1626765750688</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1626765750688</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -92,6 +103,7 @@
     <MESSAGE value="All files was updated" />
     <MESSAGE value="README file was been changed" />
     <MESSAGE value="size of ui elements and position was been corrected" />
-    <option name="LAST_COMMIT_MESSAGE" value="size of ui elements and position was been corrected" />
+    <MESSAGE value="css and position of import was been refactoring" />
+    <option name="LAST_COMMIT_MESSAGE" value="css and position of import was been refactoring" />
   </component>
 </project>
