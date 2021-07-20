@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="1887e751-936f-46dc-91fd-9e07cf3cf5ab" name="Default Changelist" comment="size of ui elements and position was been corrected">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Employee/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Employee/style.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/employees.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/employees.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
