@@ -2,17 +2,17 @@ import React from 'react'
 import {statusTypes} from "../../interfaces/statusTypes"
 import './style.scss'
 
-const StatusItem:React.FC<statusTypes> = ({status, item, getStatusValue}) => {
+const StatusItem: React.FC<statusTypes> = (props: statusTypes) => {
     return (
-        <>
-            <div className={`status-item  ${status.toLowerCase() === item ? 'active' : ''}`}
-                 onClick={()=>{getStatusValue(item)}}
-            >
+        <div className={`status-item  ${props.status.toLowerCase() === props.item ? 'active' : ''}`}
+             onClick={() => {
+                 props.onStatusChange(props.item)
+             }}
+        >
                 <span>
-                    {item}
+                    {props.item}
                 </span>
-            </div>
-        </>
+        </div>
     )
 }
 

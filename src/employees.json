@@ -3,7 +3,7 @@
     {
       "id": 1,
       "username": "John",
-      "status": "inactive"
+      "status": "added"
     },
     {
       "id": 2,
@@ -18,7 +18,7 @@
     {
       "id": 4,
       "username": "Slava",
-      "status": "in-check"
+      "status": "active"
     },
     {
       "id": 5,
@@ -31,7 +31,7 @@
       "id": 6
     },
     {
-      "status": "approved",
+      "status": "added",
       "username": "Stas",
       "id": 7
     }

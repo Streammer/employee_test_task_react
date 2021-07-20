@@ -13,7 +13,7 @@ const Employee: React.FC<EmployeeTypes> = (props:EmployeeTypes) => {
     ]
 
     const [employeeStatus, setEmployeeStatus] = useState(statusArray)
-    const getStatusValue = (statusValue: string) => {
+    const onChangeStatusHandler = (statusValue: string) => {
         props.changeEmployeeStatus(props.id, statusValue)
     }
 
@@ -24,7 +24,7 @@ const Employee: React.FC<EmployeeTypes> = (props:EmployeeTypes) => {
             <div className='employee__status'>
                 {employeeStatus.map(item => (
                         <StatusItem
-                            getStatusValue={getStatusValue}
+                            onStatusChange={onChangeStatusHandler}
                             key={item}
                             item={item}
                             status={props.status}/>

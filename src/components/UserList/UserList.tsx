@@ -18,10 +18,9 @@ const UserList: React.FC = () => {
     // }
 
     useEffect(() => {
+
         getEmployees()
-            .then((response) => {
-                setEmployee(response.data)
-            })
+            .then(response => setEmployee(response))
     }, [])
 
     const changeEmployeeStatus = (id: number, status: string) => {
