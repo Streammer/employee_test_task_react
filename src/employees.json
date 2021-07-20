@@ -3,17 +3,17 @@
     {
       "id": 1,
       "username": "John",
-      "status": "added"
+      "status": "inactive"
     },
     {
       "id": 2,
       "username": "Anna",
-      "status": "in-check"
+      "status": "active"
     },
     {
       "id": 3,
       "username": "Vadim",
-      "status": "active"
+      "status": "approved"
     },
     {
       "id": 4,
@@ -23,7 +23,7 @@
     {
       "id": 5,
       "username": "Kirill",
-      "status": "approved"
+      "status": "added"
     },
     {
       "username": "Vadim",

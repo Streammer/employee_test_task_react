@@ -3,14 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="1887e751-936f-46dc-91fd-9e07cf3cf5ab" name="Default Changelist" comment="size of ui elements and position was been corrected">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/employees.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.test.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Employee/Employee.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Employee/Employee.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/SattusItem/StatusItem.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SattusItem/StatusItem.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Employee/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Employee/style.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/employees.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/employees.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/setupTests.ts" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,7 +42,7 @@
       <option name="presentableId" value="Default" />
       <updated>1626686193581</updated>
       <workItem from="1626686194775" duration="6987000" />
-      <workItem from="1626760754166" duration="2131000" />
+      <workItem from="1626760754166" duration="3045000" />
     </task>
     <task id="LOCAL-00001" summary="All files was updated">
       <created>1626686742125</created>
@@ -71,7 +65,14 @@
       <option name="project" value="LOCAL" />
       <updated>1626696991668</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="size of ui elements and position was been corrected">
+      <created>1626762995887</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1626762995887</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
