@@ -14,7 +14,7 @@
     "react"
   ],
   "globals": {
-    "module": 0
+    "module": false
   },
   "rules": {
     // React
@@ -38,10 +38,11 @@
     "react/no-unknown-property": 1,
     "react/prop-types": 1,
     "react/react-in-jsx-scope": 1,
-    "react/require-extension": 1,
+    "react/require-extension": 0,
+    "react/wrap-multilines":0,
     "react/self-closing-comp": 1,
     "react/sort-comp": 1,
-    "react/wrap-multilines": 1,
+
 
     "no-cond-assign": 1,             // disallow assignment in conditional expressions
     "no-console": 0,                 // disallow use of console (off by default in the node environment)
@@ -173,7 +174,7 @@
     "no-mixed-spaces-and-tabs": 1,   // disallow mixed spaces and tabs for indentation
     "quotes": [1, "single"],         // specify whether double or single quotes should be used
     "quote-props": 0,                // require quotes around object literal property names (off by default)
-    "semi": 1,                       // require or disallow use of semicolons instead of ASI
+    "semi": 0,                       // require or disallow use of semicolons instead of ASI
     "sort-vars": 0,                  // sort variables within the same declaration block (off by default)
     "keyword-spacing": 1,            // require a space after certain keywords (off by default)
     "space-in-brackets": 0,          // require or disallow spaces inside brackets (off by default)

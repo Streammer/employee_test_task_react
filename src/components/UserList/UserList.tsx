@@ -1,20 +1,15 @@
 import React from 'react'
 import {useState, useEffect} from 'react'
-import Employee from "../Employee/Employee"
-import {userTypes} from "../../interfaces/userTypes"
-import {getEmployees} from "../../api/getEmployees"
-import {patchEmployees} from "../../api/patchEmployees"
+import Employee from '../Employee/Employee'
+import {userTypes} from '../../interfaces/userTypes'
+import {getEmployees} from '../../api/getEmployees'
+import {patchEmployees} from '../../api/patchEmployees'
 import './style.scss'
 
 
 const UserList: React.FC = () => {
     const [employee, setEmployee] = useState<userTypes[]>([])
-    // const getEmployees = () => {
-    //     getRequest(`${BASE}employees`)
-    //         .then((response) => {
-    //             setEmployee(response.data)
-    //         })
-    // }
+
 
     useEffect(() => {
         getEmployees()
@@ -22,19 +17,6 @@ const UserList: React.FC = () => {
     }, [])
 
     const changeEmployeeStatus = (id: number, status: string) => {
-        // patchRequest(`${BASE}employees/${id}`, {id, status})
-        //     .then(() => {
-        //         const nextEmployee = employee.map(it => {
-        //             if (it.id === id) {
-        //                 return {
-        //                     ...it,
-        //                     status
-        //                 }
-        //             }
-        //             return it
-        //         })
-        //         setEmployee(nextEmployee)
-        //     })
         patchEmployees(id, status)
             .then(() => {
                 const nextEmployee = employee.map(it => {
