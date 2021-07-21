@@ -3,35 +3,35 @@
     {
       "id": 1,
       "username": "John",
-      "status": "added"
+      "status": "in-check"
     },
     {
       "id": 2,
       "username": "Anna",
-      "status": "added"
+      "status": "approved"
     },
     {
       "id": 3,
       "username": "Vadim",
-      "status": "approved"
+      "status": "active"
     },
     {
       "id": 4,
       "username": "Slava",
-      "status": "active"
+      "status": "inactive"
     },
     {
       "id": 5,
       "username": "Kirill",
-      "status": "approved"
+      "status": "active"
     },
     {
       "username": "Vadim",
-      "status": "in-check",
+      "status": "approved",
       "id": 6
     },
     {
-      "status": "added",
+      "status": "in-check",
       "username": "Stas",
       "id": 7
     }

@@ -1,5 +1,5 @@
 import React, {useState} from 'react'
-import StatusItem from "../SattusItem/StatusItem"
+import StatusItem from "../StatusItem/StatusItem"
 import EmployeeTypes from "../../interfaces/employeeTypes"
 import './style.scss'
 
