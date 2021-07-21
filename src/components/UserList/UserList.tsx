@@ -2,22 +2,18 @@ import React from 'react'
 import {useState, useEffect} from 'react'
 import Employee from '../Employee/Employee'
 import {userTypes} from '../../interfaces/userTypes'
-import {getEmployees} from '../../api/getEmployees'
-import {patchEmployees} from '../../api/patchEmployees'
+import {patchRequest, getRequest} from '../../services/requests'
 import './style.scss'
-
 
 const UserList: React.FC = () => {
     const [employee, setEmployee] = useState<userTypes[]>([])
-
-
     useEffect(() => {
-        getEmployees()
+        getRequest()
             .then(response => setEmployee(response))
     }, [])
 
     const changeEmployeeStatus = (id: number, status: string) => {
-        patchEmployees(id, status)
+        patchRequest(id, status)
             .then(() => {
                 const nextEmployee = employee.map(it => {
                     if (it.id === id) {

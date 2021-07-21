@@ -1,6 +1,6 @@
 import React, {useState} from 'react'
 import StatusItem from '../StatusItem/StatusItem'
-import EmployeeTypes from '../../interfaces/employeeTypes'
+import {EmployeeTypes} from '../../interfaces/employeeTypes'
 import './style.scss'
 
 const statusArray: Array<string> = [
@@ -11,7 +11,7 @@ const statusArray: Array<string> = [
     'inactive'
 ]
 
-const Employee: React.FC<EmployeeTypes> = (props:EmployeeTypes) => {
+const Employee: React.FC<EmployeeTypes> = (props: EmployeeTypes) => {
     // const [employeeStatus, setEmployeeStatus] = useState(statusArray)
     const onChangeStatusHandler = (statusValue: string) => {
         props.changeEmployeeStatus(props.id, statusValue)

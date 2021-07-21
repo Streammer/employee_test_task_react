@@ -1,5 +1,5 @@
 export interface userTypes {
-    id: number
-    username: string
+    id: number,
+    username: string,
     status: string
 }

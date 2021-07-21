@@ -1,5 +1,5 @@
 export interface statusTypes {
-    status:string
-    item: string
+    status:string,
+    item: string,
     onStatusChange:(status: string) => void
 }

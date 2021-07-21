@@ -8,17 +8,17 @@
     {
       "id": 2,
       "username": "Anna",
-      "status": "added"
+      "status": "inactive"
     },
     {
       "id": 3,
       "username": "Vadim",
-      "status": "active"
+      "status": "approved"
     },
     {
       "id": 4,
       "username": "Slava",
-      "status": "in-check"
+      "status": "approved"
     },
     {
       "id": 5,
@@ -27,7 +27,7 @@
     },
     {
       "username": "Vadim",
-      "status": "active",
+      "status": "in-check",
       "id": 6
     },
     {

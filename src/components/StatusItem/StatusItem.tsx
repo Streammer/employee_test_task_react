@@ -1,5 +1,5 @@
 import React from 'react'
-import {statusTypes} from "../../interfaces/statusTypes"
+import {statusTypes} from '../../interfaces/statusTypes'
 import './style.scss'
 
 const StatusItem: React.FC<statusTypes> = (props: statusTypes) => {
